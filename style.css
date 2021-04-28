@@ -1,0 +1,94 @@
+.superior {
+    background: url(imagens/fundo-superior.jpg) no-repeat center center;
+    background-size: cover;
+    height: 650px;
+}
+
+body {
+    width: 100%;
+}
+
+.superior2 {
+    background: url(imagens/banner1.jpg) no-repeat center center;
+    background-size: cover;
+    height: 650px;
+}
+
+.superior3 {
+    background: url(imagens/banner3.jpg) no-repeat center center;
+    background-size: cover;
+    height: 650px;
+}
+
+.artigo {
+    background-size: cover;
+    height: 300px;
+    width: 400px;
+    box-shadow: 2px 2px 2px rgb(180, 180, 180);
+    color: white;
+}
+
+.artigo:hover {
+    animation-duration: 0.5s;
+    animation-name: flutuar;
+    animation-iteration-count: 1; 
+    position: relative;
+    animation-fill-mode: forwards;
+}
+
+@keyframes flutuar {
+    0% {top: 0}
+    100% {top: -5px}
+}
+
+section a:hover {
+    text-decoration: none;
+}
+
+.espacamento {
+    padding: 10px 35px 10px 60px;
+    background: rgba(36, 87, 255, 0.5);
+}
+
+.espacamento:hover {
+    animation-duration: 1s;
+    animation-name: deslizar;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; 
+}
+
+@keyframes deslizar {
+    0% {padding: 10px 35px 10px 60px;}
+    100% {padding: 10px 45px 10px 100px;}
+}
+
+#quem-somos {
+    margin: 50px 0 50px 0; 
+
+}
+
+#tamanho img {
+    width: 20%;
+}
+
+#tamanho {
+    padding: 30px 0 30px 0;
+}
+
+.tamanho {
+    width: 300px;
+    height: 250px;
+}
+
+.tamanho:hover {
+    width: 100%;
+    animation-duration: 0.5s;
+    animation-name: aumentar;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards;
+}
+
+@keyframes aumentar {
+    0% {width: 300px; height: 250px;}
+    100% {width: 310px; height: 260px;}
+}
